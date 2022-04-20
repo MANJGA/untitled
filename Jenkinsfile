@@ -11,7 +11,7 @@ pipeline {
 
         stage('maven project') {
           steps {
-            bat 'mvn compile test package'
+            bat 'Mvn clean test'
           }
         }
 
