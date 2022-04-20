@@ -5,13 +5,13 @@ pipeline {
       parallel {
         stage('Maven version') {
           steps {
-            sh 'mvn --version'
+            bat 'mvn --version'
           }
         }
 
         stage('maven project') {
           steps {
-            bat 'cd C:\\Users\\manjga\\Desktop\\untitled'
+            bat 'mvn compile test package'
           }
         }
 
