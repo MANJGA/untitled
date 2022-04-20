@@ -11,7 +11,7 @@ pipeline {
 
         stage('maven project') {
           steps {
-            bat 'clean test'
+            bat 'cd C:\\Users\\manjga\\Desktop\\untitled'
           }
         }
 
